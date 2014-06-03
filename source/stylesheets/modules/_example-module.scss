@@ -1,0 +1,23 @@
+%example-module {
+  @include trailer(1);
+  background: $yellow-light;
+  border-radius: 10px;
+  padding: pxtoem(40px);
+  text-align: center;
+  @include at-breakpoint($tablet-only) {
+    @include span-columns(4);
+  }
+
+  @include at-breakpoint($desktop-and-above) {
+    @include span-columns(6);
+  }
+}
+
+.example-module {
+  @extend %example-module;
+}
+
+.example-module--is-omega {
+  @extend %example-module;
+  @include omega;
+}
