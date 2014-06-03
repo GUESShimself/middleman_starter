@@ -2,39 +2,34 @@
 //-----------------------------
 
 // vendor
-@import compass
-@import susy
+@import "compass";
+@import "susy";
 
 // project
-@import functions/**/*
-@import mixins/**/*
-
+@import "functions/**/*";
+@import "mixins/**/*";
 
 // global config variables
 //-----------------------------
 
-@import config
-
+@import "config";
 
 // vendor CSS libraries
 //-----------------------------
 
-@import vendor/normalize
-
+@import "vendor/normalize";
 
 // base element styles
 //-----------------------------
 
-@import base/**/*
-
+@import "base/**/*";
 
 // modules
 //-----------------------------
 
-@import modules/**/*
-
+@import "modules/**/*";
 
 // state
 //-----------------------------
 
-@import state/**/*
+@import "state/**/*";
